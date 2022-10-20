@@ -1,0 +1,21 @@
+/*Escreva uma função, que  copie  o  conteúdo  da string  A  para  a  string  B, usando vetores. 
+
+Exemplos de uso: 
+copia_string(destino, “Esse é o conteúdo que vai para a variável.”);
+copia_string(destino, string_origem)*/
+
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char v1[51],v2[51];
+    int i;
+
+  printf("Digite a frase: ");
+  scanf(" %[^\n]", v1);
+    for(i=0;i<51;i++){
+        v2[i]=v1[i];
+    }
+    printf("%s",v2);
+    return 0;
+  }
