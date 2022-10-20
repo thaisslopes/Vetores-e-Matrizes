@@ -1,0 +1,33 @@
+/*Escreva um programa que receba duas Matrizes, do mesmo tamanho, e responda se elas são Matrizes Opostas.*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+ int i, j, m1[3][3], m2[3][3];
+ int resultado;
+
+for (i = 0; i < 3; i++) {
+    for (j = 0; j < 3; j++) {
+      scanf("%d", &m1[i][j]);
+    }
+    
+for (i = 0; i < 3; i++) {
+   for (j = 0; j < 3; j++) {
+      canf("%d", &m2[i][j]);
+    }
+
+ for(i = 0; i< 3; i++){
+    for(j = 0; j < 3; j++){  
+        resultado = m1[i][j] + m2[i][j];
+        }
+ }  
+
+ if(resultado == 0){
+    printf("\n Matrizes opostas");
+ }  
+ else{
+    printf("\n Matrizes nao opostas");}
+    return 0;
+
+}
