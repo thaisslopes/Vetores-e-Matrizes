@@ -1,0 +1,18 @@
+/*Escreva um programa que recebe uma matriz quadrada, de qualquer tamanho e retorne os valores das somas dos seguintes elementos:
+Diagonal Principal
+Diagonal Secundária*/
+
+#include <stdio.h>
+
+int main() {
+  int m[3][3], i, j, soma1, soma2;
+  for (i = 0; i < 3; i++) {
+    for (j = 0; j < 3; j++) {
+      scanf("%d", &m[i][j]);
+    }
+  }
+  soma1 = m[0][0] + m[1][1] + m[2][2];
+  soma2 = m[0][2] + m[1][1] + m[2][0];
+  printf("Soma da diagonal principal: %d\nSoma da diagonal secundária: %d",
+         soma1, soma2);
+}
